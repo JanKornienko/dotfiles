@@ -50,6 +50,10 @@ In case of reject the license agreement, reinstall the installer.
 ```sh
 sudo apt install -reinstall ttf-mscorefonts-installer
 ```
+## SSH keys
+First generate a new SSH key and add it to the ssh-agent - [link](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+Then add a new SSH key to the GitHub account - [link](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+You have to use SSH links instead of HTTPS.
 ## Programs & SW
 - [Figma](https://github.com/Figma-Linux/figma-linux)
 - [Bitwarden](https://bitwarden.com/download/)
