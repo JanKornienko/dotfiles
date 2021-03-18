@@ -71,3 +71,4 @@ You have to use SSH links instead of HTTPS.
 - [OBS](https://nodejs.org/en/)
 - [VPN](https://protonvpn.com/support/linux-vpn-setup/)
 - [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)
+- [NeoVim](https://github.com/neovim/neovim)
