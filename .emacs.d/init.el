@@ -1,5 +1,8 @@
-(setq inhibit-startup-message t) ;Disable welcome tips
-(scroll-bar-mode -1) ;Disable visible scrollbar
-(tool-bar-mode -1) ;Disable the toolbar
-(tooltip-mode -1) ;Disable tooltips
-(menu-bar-mode -1) ;Disable the menu bar
+;; Loading configuration files from 'elisp' folder 
+(add-to-list 'load-path (concat user-emacs-directory "elisp"))
+
+;; Base configuration
+(require 'base)
+
+;; Theme
+(require 'theme)
