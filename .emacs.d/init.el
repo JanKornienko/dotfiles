@@ -6,3 +6,6 @@
 
 ;; Theme
 (require 'theme)
+
+;; Evil mode
+(require 'vim)
