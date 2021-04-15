@@ -54,21 +54,3 @@ sudo apt install -reinstall ttf-mscorefonts-installer
 First generate a new SSH key and add it to the ssh-agent - [link](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 Then add a new SSH key to the GitHub account - [link](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 You have to use SSH links instead of HTTPS.
-## Programs & SW
-- [Figma](https://github.com/Figma-Linux/figma-linux)
-- [Bitwarden](https://bitwarden.com/download/)
-- [Signal](https://www.signal.org/download/)
-- [VeraCrypt](https://www.veracrypt.fr/en/Downloads.html)
-- [Discord](https://discord.com/)
-- [Spotify](https://www.spotify.com/cz/download/linux/)
-- [Logiops](https://github.com/PixlOne/logiops) - Logitech MX Master 2S Driver
-	- Install `g++`
-- [Caprine](https://github.com/sindresorhus/caprine) - Facebook Messenger app
-- [VLC](https://github.com/videolan/vlc)
-- [Visual Studio Code](https://github.com/microsoft/vscode)
-- [Tabnine](https://www.tabnine.com/) - AI code completion tool
-- [Node.js](https://nodejs.org/en/)
-- [OBS](https://nodejs.org/en/)
-- [VPN](https://protonvpn.com/support/linux-vpn-setup/)
-- [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)
-- [NeoVim](https://github.com/neovim/neovim)
