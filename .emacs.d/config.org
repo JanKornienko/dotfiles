@@ -1,7 +1,7 @@
 #+TITLE: GNU Emacs Config
 #+AUTHOR: Jan Kornienko
 
-* BASICS
+* Basics
 ** Disable welcome screen/scrollbar/toolbar/menu bar, Frame size
 #+begin_src emacs-lisp
 (setq inhibit-startup-screen t)
@@ -10,12 +10,15 @@
 (menu-bar-mode -1)
 (fringe-mode 0)
 #+end_src
-
+** Default Coding System
+#+begin_src emacs-lisp
+(set-default-coding-systems 'utf-8)
+#+end_src
 ** Tabs
 #+begin_src emacs-lisp
 (setq-default tab-width 2)
+(setq-default evil-shift-width tab-width)
 #+end_src
-
 ** Setup MELPA
 #+begin_src emacs-lisp
 (require 'package)
@@ -24,14 +27,21 @@
 (package-refresh-contents)
 (package-initialize)
 #+end_src
-
 ** Use-Package
 #+begin_src emacs-lisp
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
 (setq use-package-always-ensure t)
 #+end_src
-
+** Line Numbers
+#+begin_src emacs-lisp
+(unless (package-installed-p 'linum-relative)
+	(package-install 'linum-relative))
+(require 'linum-relative)
+(linum-relative-mode)
+(setq linum-relative-backend 'display-line-numbers-mode)
+(linum-relative-global-mode)
+#+end_src
 * EVIL MODE
 #+begin_src emacs-lisp
 (use-package evil
@@ -46,10 +56,14 @@
   :config
   (evil-collection-init))
 #+end_src
-
 * THEME AND ICONS
 #+begin_src emacs-lisp
 (use-package gruvbox-theme
   :init
   (load-theme 'gruvbox-dark-hard t))
+#+end_src
+* KEYBOARD BINDINGS
+** ESC Cancels All
+#+begin_src emacs-lisp
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 #+end_src
