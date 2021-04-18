@@ -1,5 +1,5 @@
-+TITLE: GNU Emacs Config
-+AUTHOR: Jan Kornienko
+#+TITLE: GNU Emacs Config
+#+AUTHOR: Jan Kornienko
 
 * BASICS
 ** Disable welcome screen/scrollbar/toolbar/menu bar, Frame size
@@ -47,7 +47,7 @@
   (evil-collection-init))
 #+end_src
 
-* THEME
+* THEME AND ICONS
 #+begin_src emacs-lisp
 (use-package gruvbox-theme
   :init
