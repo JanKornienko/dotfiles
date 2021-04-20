@@ -8,7 +8,7 @@
 " --- GENERAL ---
 syntax enable " Syntax highlighting
 set noerrorbells " No sound notifications
-set relativenumber " Relative line numbers
+set number relativenumber " Relative line numbers
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
@@ -31,6 +31,7 @@ set incsearch
 " --- PLUGINS ---
 call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'morhetz/gruvbox'
+Plug 'ap/vim-css-color'
 call plug#end()
 
 " --- THEME ---
