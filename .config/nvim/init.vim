@@ -1,10 +1,3 @@
-"  _					 _	 _								 _
-" (_)					(_) | |								(_)
-"  _	 _ __		 _	| |_			__	 __  _	 _ __ ___
-" | | | '_ \	| | | __|			\ \ / / | | | '_ ` _ \
-" | | | | | | | | | |_	 _	 \ V /	| | | | | | | |
-" |_| |_| |_| |_|  \__| (_)		\_/		|_| |_| |_| |_|
-
 " --- GENERAL ---
 syntax on " Syntax highlighting
 set noerrorbells " No sound notifications
@@ -26,6 +19,7 @@ set nobackup
 set undodir=~/.config/nvim/undodir
 set undofile
 set incsearch
+autocmd TextChanged,TextChanged <buffer> silent write
 
 " --- PLUGINS ---
 call plug#begin('~/.config/nvim/autoload/plugged')
