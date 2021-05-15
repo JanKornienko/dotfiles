@@ -25,7 +25,6 @@ autocmd TextChanged,TextChanged <buffer> silent write
 call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'morhetz/gruvbox' " Gruvbox theme
 Plug 'ap/vim-css-color' " CSS color highlight
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " Coc language servers
 Plug 'vim-airline/vim-airline' " Vim status line
 Plug 'vim-airline/vim-airline-themes' " Airline themes
 call plug#end()
